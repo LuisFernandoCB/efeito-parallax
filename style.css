@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+:root {
+    --font1: "Bungee Spice";
+    --font2: "Bebas Neue"
+}
+
+h1 {
+    font-family: var(--font1);
+    font-size: 4em;
+}
+
+header p {
+    font-family: var(--font2);
+    font-size: 2em;
+}
