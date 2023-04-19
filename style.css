@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 * {
     padding: 0;
@@ -9,9 +9,32 @@
     font-family: Arial;
 }
 
+#blackout {
+    background-color: black;
+    color: white;
+}
+
+.vialeite {
+    background-image: url("imagens/vialactea.jpeg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fodase {
+    background-color: gray;
+    padding: 10px 50px;
+}
+
+.fodase p {
+    background-color: rgba(0, 0, 255, 0.447);
+}
+
 :root {
     --font1: "Bungee Spice";
-    --font2: "Bebas Neue"
+    --font2: "Share Tech Mono"
 }
 
 h1 {
@@ -19,7 +42,52 @@ h1 {
     font-size: 4em;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b0039;
+    height: 200px;
+}
+
+header div {
+    text-align: center;
+}
+
+header div p { 
+    padding: 15px;
+}
+
 header p {
     font-family: var(--font2);
-    font-size: 2em;
+    font-size: 1.3em;
+    color: white;
+}
+
+section p {
+    font-family: var(--font2);
+    width: 20em;
+    font-size: 1.8em;
+    line-height: 2.5em;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b0039;
+    height: 200px;
+}
+
+footer p {
+    font-size: 2.5em;
+    color: white;
 }
